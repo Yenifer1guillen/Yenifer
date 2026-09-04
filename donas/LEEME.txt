@@ -1,0 +1,19 @@
+DONAS · CARRITO CONECTADO
+
+No se cambió el CSS ni el diseño.
+
+Incluye:
+- Donas.html
+- Donas.js
+
+El JS conserva/agrega:
+- filtros de donas
+- selector de caja 4 / 6 / 12
+- mensaje al agregar
+- carrito persistente con localStorage
+- contador persistente
+- si agregas la misma dona, aumenta la cantidad
+- enlace del carrito a ../carrito.html
+- misma clave del carrito: huellasEstiloCarrito
+
+Pon ambos archivos dentro de la carpeta Donas.

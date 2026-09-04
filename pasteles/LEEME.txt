@@ -1,0 +1,20 @@
+PASTELES · CARRITO CONECTADO
+
+No se cambió el CSS ni el diseño.
+
+Cambios:
+- El texto Carrito del menú ahora abre ../carrito.html
+- Los botones Agregar guardan nombre, precio, imagen y cantidad.
+- Si agregas el mismo pastel otra vez, aumenta su cantidad.
+- El contador del menú se conserva al cambiar de página.
+- Usa la misma clave que el carrito de Huellas & Estilo:
+  huellasEstiloCarrito
+
+Coloca Pasteles.html y Pasteles.js dentro de tu carpeta Pasteles,
+reemplazando los anteriores.
+
+IMPORTANTE:
+El carrito principal debe estar como:
+../carrito.html
+
+y debe usar el carrito.js funcional que hicimos antes.

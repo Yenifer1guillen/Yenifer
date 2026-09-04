@@ -1,0 +1,24 @@
+CUPCAKES · CARRITO CORREGIDO
+
+Archivos:
+- Cupcakes.html
+- Cupcakes.js
+
+IMPORTANTE:
+Este archivo ya usa el carrito correcto de Choppy Sweets.
+
+Clave de localStorage:
+choppySweetsCarrito
+
+Ruta del carrito:
+../Carrito/Carrito.html
+
+Funciones:
+- contador persistente
+- agregar productos
+- si agregas el mismo cupcake otra vez, aumenta la cantidad
+- conserva filtros
+- conserva selector de packs 4 / 6 / 12
+- conserva toast de "agregado"
+
+Coloca ambos archivos dentro de la carpeta Cupcakes.

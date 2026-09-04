@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumpleaños - Choppy Sweets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Cumpleaños.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav-wrap">
+    <a href="../index.html" class="logo">🎂 Choppy <span>Sweets</span></a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <nav class="nav" id="nav">
+      <a href="../Pasteles/Pasteles.html">Pasteles</a>
+      <a href="../Postres/Postres.html">Postres</a>
+      <a href="../Galletas/Galletas.html">Galletas</a>
+      <a href="../Eventos/Eventos.html">Eventos</a>
+      <a href="../Donas/Donas.html">Donas</a>
+      <a href="../Cupcakes/Cupcakes.html">Cupcakes</a>
+      <a href="../Cumpleaños/Cumpleaños.html">Cumpleaños</a>
+      <a href="../Aniversarios/Aniversarios.html">Aniversarios</a>
+      <a href="../Registro/Registro.html">Galletas</a>
+    </nav>
+      <a href="../Carrito/Carrito.html">🛒 Carrito (<b id="cart-count">0</b>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="confetti c1">✦</div>
+  <div class="confetti c2">●</div>
+  <div class="confetti c3">★</div>
+  <div class="confetti c4">✦</div>
+  <div class="confetti c5">●</div>
+  <div class="confetti c6">★</div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">HOY SE CELEBRA EN GRANDE</span>
+      <h1>Un cumpleaños merece<br><span>un pastel inolvidable.</span></h1>
+
+      <p>
+        Diseños alegres, sabores suaves y tortas hechas para cantar,
+        tomar fotos y pedir otra porción cuando nadie esté viendo.
+      </p>
+
+      <a href="#tortas" class="main-btn">Ver tortas ↓</a>
+    </div>
+
+    <div class="birthday-art" aria-hidden="true">
+      <div class="plate"></div>
+      <div class="cake-base"></div>
+      <div class="cake-top"></div>
+      <div class="cream"></div>
+
+      <div class="candle candle1"><i></i></div>
+      <div class="candle candle2"><i></i></div>
+      <div class="candle candle3"><i></i></div>
+
+      <div class="balloon b1"></div>
+      <div class="balloon b2"></div>
+      <div class="balloon b3"></div>
+    </div>
+  </div>
+</section>
+
+<main class="birthday-section" id="tortas">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">COLECCIÓN DE CUMPLEAÑOS</span>
+        <h2>Elige la estrella de la fiesta</h2>
+        <p>Diez opciones para que el cumple se vea bonito antes de que todos ataquen el pastel 😭🎂</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="colorido">Coloridos</button>
+        <button class="filter" data-filter="elegante">Elegantes</button>
+        <button class="filter" data-filter="clasico">Clásicos</button>
+      </div>
+    </div>
+
+    <div class="cakes-grid">
+
+      <article class="cake-card" data-category="colorido">
+        <div class="cake-img"><img src="Torta1.jfif" alt="Torta de cumpleaños 1"><span class="badge">Favorita</span></div>
+        <div class="cake-info"><small>CLASICO</small><h3>Pastel de Melocotón</h3><p>Un diseño alegre, delicado y listo para llenar la mesa de sabor.</p><div class="footer"><strong>$28.00</strong><button class="add" data-name="Pastel de Melocotón" data-id="cumple-pastel-de-melocot-n" data-precio="28.00" data-imagen="../Cumpleaños/Torta1.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="elegante">
+        <div class="cake-img"><img src="Torta2.jfif" alt="Torta de cumpleaños 2"></div>
+        <div class="cake-info"><small>ELEGANTE</small><h3>Caramelizado</h3><p>Un pastel limpio y bonito para celebraciones con un toque especial de sabor a caramelo.</p><div class="footer"><strong>$32.00</strong><button class="add" data-name="Caramelizado" data-id="cumple-caramelizado" data-precio="32.00" data-imagen="../Cumpleaños/Torta2.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="clasico">
+        <div class="cake-img"><img src="Torta3.jfif" alt="Torta de cumpleaños 3"><span class="badge">Clásico</span></div>
+        <div class="cake-info"><small>COLORIDO</small><h3>Birthday Cream</h3><p>Suave, cremoso y perfecto para cantar cumpleaños alrededor de la mesa.</p><div class="footer"><strong>$27.00</strong><button class="add" data-name="Birthday Cream" data-id="cumple-birthday-cream" data-precio="27.00" data-imagen="../Cumpleaños/Torta3.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="colorido">
+        <div class="cake-img"><img src="Torta4.jfif" alt="Torta de cumpleaños 4"></div>
+        <div class="cake-info"><small>Elegante</small><h3>Pastel de Vainilla</h3><p>Una opción de sabor deliciosa.</p><div class="footer"><strong>$30.00</strong><button class="add" data-name="Pastel de Vainilla" data-id="cumple-pastel-de-vainilla" data-precio="30.00" data-imagen="../Cumpleaños/Torta4.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="elegante">
+        <div class="cake-img"><img src="Torta5.jfif" alt="Torta de cumpleaños 5"></div>
+        <div class="cake-info"><small>ELEGANTE</small><h3>Pastel de fruas frescas</h3><p>Detalles delicados y un acabado bonito para una celebración más tranquila.</p><div class="footer"><strong>$34.00</strong><button class="add" data-name="Pastel de fruas frescas" data-id="cumple-pastel-de-fruas-frescas" data-precio="34.00" data-imagen="../Cumpleaños/Torta5.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="clasico">
+        <div class="cake-img"><img src="Torta6.jfif" alt="Torta de cumpleaños 6"></div>
+        <div class="cake-info"><small>CLÁSICO</small><h3>Durazno</h3><p>Un pastel muy delicioso</p><div class="footer"><strong>$26.00</strong><button class="add" data-name="Durazno" data-id="cumple-durazno" data-precio="26.00" data-imagen="../Cumpleaños/Torta6.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="colorido">
+        <div class="cake-img"><img src="Torta7.jfif" alt="Torta de cumpleaños 7"><span class="badge special">Especial</span></div>
+        <div class="cake-info"><small>ESPECIAL</small><h3>Pastel de fresas</h3><p>Un pastel cremoso y delicioso con tonos rojos</p><div class="footer"><strong>$36.00</strong><button class="add" data-name="Pastel de fresas" data-id="cumple-pastel-de-fresas" data-precio="36.00" data-imagen="../Cumpleaños/Torta7.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="elegante">
+        <div class="cake-img"><img src="Torta8.jfif" alt="Torta de cumpleaños 8"></div>
+        <div class="cake-info"><small>ELEGANTE</small><h3>Pastel de fresas</h3><p>Decoración suave y una presencia elegante para fotos bonitas.</p><div class="footer"><strong>$35.00</strong><button class="add" data-name="Pastel de fresas" data-id="cumple-pastel-de-fresas" data-precio="35.00" data-imagen="../Cumpleaños/Torta8.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="clasico">
+        <div class="cake-img"><img src="Torta9.jfif" alt="Torta de cumpleaños 9"></div>
+        <div class="cake-info"><small>CLÁSICO</small><h3>Pastel de banana</h3><p>Un pastel delicioso y sencillo.</p><div class="footer"><strong>$29.00</strong><button class="add" data-name="Pastel de banana" data-id="cumple-pastel-de-banana" data-precio="29.00" data-imagen="../Cumpleaños/Torta9.jfif">Agregar</button></div></div>
+      </article>
+
+      <article class="cake-card" data-category="colorido">
+        <div class="cake-img"><img src="Torta10.jfif" alt="Torta de cumpleaños 10"><span class="badge">Nuevo</span></div>
+        <div class="cake-info"><small>COLORIDO</small><h3>Pastel cremoso de vainilla</h3><p>Color y dulzura para pasar un momento.</p><div class="footer"><strong>$33.00</strong><button class="add" data-name="Pastel cremoso de vainilla" data-id="cumple-pastel-cremoso-de-vainilla" data-precio="33.00" data-imagen="../Cumpleaños/Torta10.jfif">Agregar</button></div></div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<section class="age-section">
+  <div class="wrap age-card">
+    <span class="eyebrow">TOQUE PERSONAL</span>
+    <h2>¿Cuántas velitas ponemos?</h2>
+    <p>Elegí una edad y simulamos las velitas. Tranqui, no vamos a llenar la pantalla con 73 velas JAJAJA.</p>
+
+    <div class="age-controls">
+      <input type="number" id="age-input" min="1" max="100" value="18">
+      <button id="age-btn">Colocar velitas</button>
+    </div>
+
+    <div class="candles-result" id="candles-result">
+      🎂 <strong>18 velitas</strong> listas para pedir un deseo.
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span>CHOPPY SWEETS · CUMPLEAÑOS</span>
+    <h2>Que no falte la torta.<br>Lo demás se improvisa.</h2>
+    <a href="../Contacto/Contacto.html">Consultar pastel personalizado</a>
+  </div>
+</section>
+
+<div class="toast" id="toast">Torta agregada 🎂</div>
+
+<script src="Cumpleaños.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Choppy Sweets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Registro.css">
+</head>
+<body>
+
+  <a class="back-home" href="../index.html">← Volver al inicio</a>
+
+  <div class="sprinkles" aria-hidden="true">
+    <span class="sp s1"></span><span class="sp s2"></span><span class="sp s3"></span>
+    <span class="sp s4"></span><span class="sp s5"></span><span class="sp s6"></span>
+    <span class="sp s7"></span><span class="sp s8"></span><span class="sp s9"></span>
+  </div>
+
+  <main class="auth-shell" id="authShell">
+
+    <section class="form-side login-side">
+      <div class="form-box">
+        <span class="mini-title">🍰 CHOPPY SWEETS</span>
+        <h1>Bienvenido de nuevo</h1>
+        <p class="subtitle">Inicia sesión para seguir viendo nuestras variedades."</p>
+
+        <form id="loginForm">
+          <label for="loginEmail">Correo electrónico</label>
+          <div class="field">
+            <span>✉</span>
+            <input type="email" id="loginEmail" placeholder="tucorreo@gmail.com" required>
+          </div>
+
+          <label for="loginPassword">Contraseña</label>
+          <div class="field">
+            <span>🔒</span>
+            <input type="password" id="loginPassword" placeholder="Tu contraseña" required minlength="6">
+            <button class="show-pass" type="button" data-target="loginPassword">👁</button>
+          </div>
+
+          <div class="form-row">
+            <label class="remember">
+              <input type="checkbox">
+              <span>Recordarme</span>
+            </label>
+            <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="primary-btn">Iniciar sesión</button>
+
+          <p class="mobile-switch">
+            ¿Aún no tienes cuenta?
+            <button type="button" class="text-switch" id="mobileGoRegister">Registrarme</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="form-side register-side">
+      <div class="form-box">
+        <span class="mini-title">🧁 CREA TU CUENTA</span>
+        <h1>Únete a Choppy Sweets</h1>
+        <p class="subtitle">Regístrate y guarda tus antojos favoritos para después.</p>
+
+        <form id="registerForm">
+          <label for="registerName">Nombre</label>
+          <div class="field">
+            <span>👤</span>
+            <input type="text" id="registerName" placeholder="Tu nombre" required minlength="3">
+          </div>
+
+          <label for="registerEmail">Correo electrónico</label>
+          <div class="field">
+            <span>✉</span>
+            <input type="email" id="registerEmail" placeholder="tucorreo@gmail.com" required>
+          </div>
+
+          <label for="registerPassword">Contraseña</label>
+          <div class="field">
+            <span>🔒</span>
+            <input type="password" id="registerPassword" placeholder="Mínimo 6 caracteres" required minlength="6">
+            <button class="show-pass" type="button" data-target="registerPassword">👁</button>
+          </div>
+
+          <div class="strength">
+            <div class="strength-bar">
+              <span id="strengthFill"></span>
+            </div>
+            <small id="strengthText">Escribe una contraseña</small>
+          </div>
+
+          <label class="terms">
+            <input type="checkbox" id="terms" required>
+            <span>Acepto los términos y condiciones 🍓</span>
+          </label>
+
+          <button type="submit" class="primary-btn">Crear cuenta</button>
+
+          <p class="mobile-switch">
+            ¿Ya tienes cuenta?
+            <button type="button" class="text-switch" id="mobileGoLogin">Iniciar sesión</button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="sweet-panel">
+      <div class="panel-content panel-login">
+        <div class="cake-illustration">
+          <div class="cake-top"></div>
+          <div class="cake-body"></div>
+          <div class="cream c1"></div>
+          <div class="cream c2"></div>
+          <div class="cream c3"></div>
+          <div class="cherry">🍒</div>
+          <span class="spark p1">✦</span>
+          <span class="spark p2">✦</span>
+        </div>
+
+        <span class="panel-tag">ALGO DULCE TE ESPERA</span>
+        <h2>¿Todavía no tienes cuenta?</h2>
+        <p>Crea una y guarda tus pasteles, donas, cupcakes y antojos favoritos.</p>
+        <button type="button" id="goRegister" class="secondary-btn">Registrarme</button>
+      </div>
+
+      <div class="panel-content panel-register">
+        <div class="cupcake-illustration">
+          <div class="cupcake-cream">♡</div>
+          <div class="cupcake-base"></div>
+          <span class="spark q1">✦</span>
+          <span class="spark q2">✦</span>
+        </div>
+
+        <span class="panel-tag">YA ERES PARTE DEL CLUB</span>
+        <h2>¿Ya tienes una cuenta?</h2>
+        <p>Vuelve a iniciar sesión y continúa donde lo dejaste.</p>
+        <button type="button" id="goLogin" class="secondary-btn">Iniciar sesión</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="Registro.js"></script>
+</body>
+</html>

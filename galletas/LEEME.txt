@@ -1,0 +1,21 @@
+GALLETAS · CARRITO CONECTADO
+
+No se cambió el CSS ni el diseño.
+
+Incluye:
+- Galletas.html
+- Galletas.js
+
+El JS creado conserva:
+- filtros Todas / Chocolate / Rellenas / Clásicas
+- selector de caja 4 / 6 / 12
+- toast al agregar
+
+Y agrega:
+- carrito persistente con localStorage
+- contador persistente
+- mismo producto = aumenta cantidad
+- enlace del carrito a ../carrito.html
+- misma clave del carrito: huellasEstiloCarrito
+
+Pon Galletas.html y Galletas.js dentro de la carpeta Galletas.

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi carrito | Choppy Sweets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Carrito.css">
+</head>
+<body>
+
+<header class="cart-header">
+  <a href="../index.html" class="back">← Seguir comprando</a>
+  <div>
+    <span>CHOPPY SWEETS</span>
+    <h1>Tu carrito 🛍</h1>
+  </div>
+</header>
+
+<main class="cart-layout">
+  <section class="cart-products">
+    <div class="section-title">
+      <h2>Tu pedido</h2>
+      <span id="productCount">0 productos</span>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="empty-cart" id="emptyCart">
+      <div>🧁</div>
+      <h2>Tu carrito está vacío</h2>
+      <p>Agrega algo rico y aparecerá aquí.</p>
+      <a href="../Pasteles/Pasteles.html">Ver pasteles</a>
+    </div>
+  </section>
+
+  <aside class="summary" id="summary">
+    <span class="mini">RESUMEN DEL PEDIDO</span>
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <strong>$<span id="subtotal">0.00</span></strong>
+    </div>
+    <div class="summary-row">
+      <span>Envío</span>
+      <strong>A coordinar</strong>
+    </div>
+    <div class="summary-total">
+      <span>Total</span>
+      <strong>$<span id="total">0.00</span></strong>
+    </div>
+
+    <button id="buyBtn" class="buy-btn">Continuar compra</button>
+    <button id="clearBtn" class="clear-btn">Vaciar carrito</button>
+
+    <p class="note">
+      “Continuar compra” prepara el pedido. Puedes cambiarlo para enviarlo
+      por WhatsApp cuando coloques tu número.
+    </p>
+  </aside>
+</main>
+
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+  <div class="checkout-box">
+    <button class="close" id="closeCheckout">×</button>
+    <span class="mini">CASI LISTO ✨</span>
+    <h2>Confirmar pedido</h2>
+    <p>Revisa tus productos antes de enviarlos.</p>
+    <div id="checkoutProducts"></div>
+    <div class="checkout-total">Total: <strong>$<span id="checkoutTotal">0.00</span></strong></div>
+    <button id="whatsappBtn" class="buy-btn">Enviar pedido por WhatsApp</button>
+    <small>Cambia el número de WhatsApp en Carrito.js.</small>
+  </div>
+</div>
+
+<script src="Carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+header {
+    height: 75px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7c3aed;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #f3e8ff,
+        #fce7f3
+    );
+}
+
+.inicio-texto {
+    max-width: 750px;
+}
+
+.inicio-texto > p:first-child {
+    color: #7c3aed;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.inicio h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.inicio h1 span {
+    color: #7c3aed;
+}
+
+.inicio-texto p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+
+    background: #7c3aed;
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #5b21b6;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.buscador {
+    max-width: 1000px;
+
+    margin: -30px auto 0;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    gap: 10px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+    position: relative;
+    z-index: 10;
+}
+
+.buscador input,
+.buscador select {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.buscador button {
+    background: #7c3aed;
+
+    color: white;
+
+    border: none;
+
+    padding: 0 25px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   EVENTOS
+========================= */
+
+.eventos {
+    padding: 80px 7%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo p {
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.contenedor-eventos {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.evento {
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.evento:hover {
+    transform: translateY(-7px);
+}
+
+.evento img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.evento-contenido {
+    padding: 22px;
+}
+
+.etiqueta {
+    display: inline-block;
+
+    background: #ede9fe;
+
+    color: #7c3aed;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.evento h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.evento p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.datos {
+    margin: 18px 0;
+
+    color: #555;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+.evento-contenido button {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #7c3aed;
+
+    background: transparent;
+
+    color: #7c3aed;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.evento-contenido button:hover {
+    background: #7c3aed;
+    color: white;
+}
+
+#sinResultados {
+    display: none;
+
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias {
+    background: white;
+
+    padding: 80px 7%;
+}
+
+.contenedor-categorias {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.categoria {
+    padding: 35px;
+
+    text-align: center;
+
+    font-size: 45px;
+
+    border: 1px solid #eee;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+
+    border-color: #7c3aed;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.categoria h3 {
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ede9fe,
+        #fce7f3
+    );
+}
+
+.contacto h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 2000;
+
+    padding: 20px;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    position: relative;
+}
+
+.modal-contenido h2 {
+    color: #7c3aed;
+
+    margin-bottom: 25px;
+}
+
+.modal-contenido p {
+    margin: 15px 0;
+}
+
+.cerrar {
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #18181b;
+
+    color: white;
+
+    padding: 35px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .buscador {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .buscador button {
+        padding: 13px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

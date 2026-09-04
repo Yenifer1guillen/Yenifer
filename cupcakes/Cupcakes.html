@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupcakes - Choppy Sweets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Cupcakes.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav-wrap"><a href="index.html" class="brand">
+  <img src="logo-choppy-sweets.png" alt="Choppy Sweets" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+  <span class="brand-fallback">Choppy Sweets<small>BAKERY</small></span>
+</a>
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="#cupcakes">Cupcakes</a>
+      <a href="../Carrito/Carrito.html" class="cart">🛒 Carrito (<b id="cart-count">0</b>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">PEQUEÑOS, BONITOS Y DELICIOSOS</span>
+      <h1>Un poquito de felicidad<br><span>en cada cupcake.</span></h1>
+      <p>Ocho sabores para celebrar, regalar o simplemente darte un gusto porque sí. Aquí no necesitamos una excusa para comer bonito.</p>
+      <a class="main-btn" href="#cupcakes">Descubrir sabores ↓</a>
+    </div>
+
+    <div class="cupcake-art" aria-hidden="true">
+      <div class="shadow"></div>
+      <div class="wrapper"></div>
+      <div class="cream cream3"></div>
+      <div class="cream cream2"></div>
+      <div class="cream cream1"></div>
+      <div class="cherry"></div>
+      <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">♡</span>
+    </div>
+  </div>
+</section>
+
+<main class="cupcakes-section" id="cupcakes">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">VITRINA CHOPPY</span>
+        <h2>¿Cuál se viene contigo?</h2>
+        <p>Podés filtrar por sabor. Elegir solamente uno ya es otro problema 😭🧁</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="frutal">Frutales</button>
+        <button class="filter" data-filter="chocolate">Chocolate</button>
+        <button class="filter" data-filter="clasico">Clásicos</button>
+      </div>
+    </div>
+
+    <div class="cupcakes-grid">
+      <article class="cupcake-card" data-category="frutal">
+        <div class="cupcake-image"><img src="Cupcake1.jfif" alt="Cupcake de fresa"><span class="badge">Favorito</span></div>
+        <div class="cupcake-info"><small>FRUTAL</small><h3>Fresa Kiss</h3><p>Bizcocho suave con crema rosada y un toque dulce de fresa.</p><div class="footer"><strong>$2.75</strong><button class="add" data-id="cupcake-fresa-kiss" data-name="Fresa Kiss" data-precio="2.75" data-imagen="../Cupcakes/Cupcake1.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="chocolate">
+        <div class="cupcake-image"><img src="Cupcake2.jfif" alt="Cupcake de chocolate"></div>
+        <div class="cupcake-info"><small>CHOCOLATE</small><h3>Choco Cloud</h3><p>Chocolate intenso con una crema ligera y esponjosa.</p><div class="footer"><strong>$3.00</strong><button class="add" data-id="cupcake-choco-cloud" data-name="Choco Cloud" data-precio="3.00" data-imagen="../Cupcakes/Cupcake2.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="clasico">
+        <div class="cupcake-image"><img src="Cupcake3.jfif" alt="Cupcake de vainilla"><span class="badge">Clásico</span></div>
+        <div class="cupcake-info"><small>CLÁSICO</small><h3>Vanilla Bloom</h3><p>Vainilla delicada, crema suave y decoración sencilla.</p><div class="footer"><strong>$2.50</strong><button class="add" data-id="cupcake-vanilla-bloom" data-name="Vanilla Bloom" data-precio="2.50" data-imagen="../Cupcakes/Cupcake3.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="frutal">
+        <div class="cupcake-image"><img src="Cupcake4.jfif" alt="Cupcake frutal"></div>
+        <div class="cupcake-info"><small>FRUTAL</small><h3>Berry Love</h3><p>Un cupcake fresco con sabor a frutos rojos y crema sedosa.</p><div class="footer"><strong>$3.10</strong><button class="add" data-id="cupcake-berry-love" data-name="Berry Love" data-precio="3.10" data-imagen="../Cupcakes/Cupcake4.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="chocolate">
+        <div class="cupcake-image"><img src="Cupcake5.jfif" alt="Cupcake de chocolate"></div>
+        <div class="cupcake-info"><small>CHOCOLATE</small><h3>Midnight Choco</h3><p>Chocolate profundo para gente que no juega con el postre.</p><div class="footer"><strong>$3.25</strong><button class="add" data-id="cupcake-midnight-choco" data-name="Midnight Choco" data-precio="3.25" data-imagen="../Cupcakes/Cupcake5.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="clasico">
+        <div class="cupcake-image"><img src="Cupcake6.jfif" alt="Cupcake clásico"></div>
+        <div class="cupcake-info"><small>CLÁSICO</small><h3>Caramel Swirl</h3><p>Bizcocho esponjoso coronado con una espiral cremosa de caramelo.</p><div class="footer"><strong>$3.00</strong><button class="add" data-id="cupcake-caramel-swirl" data-name="Caramel Swirl" data-precio="3.00" data-imagen="../Cupcakes/Cupcake6.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="frutal">
+        <div class="cupcake-image"><img src="Cupcake7.jfif" alt="Cupcake especial"><span class="badge special">Especial</span></div>
+        <div class="cupcake-info"><small>ESPECIAL</small><h3>Pink Choppy</h3><p>Color, crema y dulzura en la versión más Choppy de la vitrina.</p><div class="footer"><strong>$3.50</strong><button class="add" data-id="cupcake-pink-choppy" data-name="Pink Choppy" data-precio="3.50" data-imagen="../Cupcakes/Cupcake7.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cupcake-card" data-category="chocolate">
+        <div class="cupcake-image"><img src="Cupcake8.jfif" alt="Cupcake premium"></div>
+        <div class="cupcake-info"><small>PREMIUM</small><h3>Choco Crown</h3><p>Una pequeña corona de chocolate para cerrar la colección como se debe.</p><div class="footer"><strong>$3.75</strong><button class="add" data-id="cupcake-choco-crown" data-name="Choco Crown" data-precio="3.75" data-imagen="../Cupcakes/Cupcake8.jfif">Agregar</button></div></div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<section class="mixer-section">
+  <div class="wrap mixer">
+    <span class="eyebrow">ARMA TU PACK</span>
+    <h2>¿Cuántos cupcakes ocupamos? 👀</h2>
+    <p>Elegí el tamaño de tu cajita. Podés decir que son para compartir; nosotros no preguntamos.</p>
+    <div class="pack-options">
+      <button class="pack active" data-pack="4"><b>4</b><span>cupcakes</span></button>
+      <button class="pack" data-pack="6"><b>6</b><span>cupcakes</span></button>
+      <button class="pack" data-pack="12"><b>12</b><span>cupcakes</span></button>
+    </div>
+    <div class="pack-result" id="pack-result">Tu cajita: <strong>4 cupcakes</strong> 🧁</div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span>CHOPPY SWEETS</span>
+    <h2>Pequeños en tamaño.<br>Grandes en antojo.</h2>
+    <a href="../Contacto/Contacto.html">Consultar pedido especial</a>
+  </div>
+</section>
+
+<div class="toast" id="toast">Cupcake agregado 🧁</div>
+<script src="Cupcakes.js"></script>
+</body>
+</html>

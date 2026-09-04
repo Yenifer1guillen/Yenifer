@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos</title>
+
+    <link rel="stylesheet" href="Eventos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+
+    <header>
+
+        <div class="logo">
+            ✨ Eventia
+        </div>
+
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-texto">
+
+            <p>✨ VIVE MOMENTOS INOLVIDABLES</p>
+
+            <h1>
+                Encuentra tu próximo
+                <span>gran evento</span>
+            </h1>
+
+            <p>
+                Descubre eventos, fiestas, conciertos,
+                conferencias y mucho más.
+            </p>
+
+            <a href="#eventos" class="boton">
+                Ver eventos
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- BUSCADOR -->
+
+    <section class="buscador">
+
+        <input
+            type="text"
+            id="buscar"
+            placeholder="🔎 Buscar evento..."
+        >
+
+        <select id="categoria">
+
+            <option value="todos">
+                Todas las categorías
+            </option>
+
+            <option value="musica">
+                Música
+            </option>
+
+            <option value="fiesta">
+                Fiestas
+            </option>
+
+            <option value="conferencia">
+                Conferencias
+            </option>
+
+        </select>
+
+        <button onclick="buscarEventos()">
+            Buscar
+        </button>
+
+    </section>
+
+
+    <!-- EVENTOS -->
+
+    <section class="eventos" id="eventos">
+
+        <div class="titulo">
+
+            <p>NO TE LOS PIERDAS</p>
+
+            <h2>Próximos eventos</h2>
+
+        </div>
+
+
+        <div class="contenedor-eventos">
+
+
+            <!-- EVENTO 1 -->
+
+            <div
+                class="evento"
+                data-categoria="musica"
+                data-nombre="Festival de Música"
+            >
+
+                <img src="Eventos1.jfif" alt="Festival de Música">
+
+                <div class="evento-contenido">
+
+                    <span class="etiqueta">
+                        Música
+                    </span>
+
+                    <h3>
+                        Festival de Música
+                    </h3>
+
+                    <p>
+                        Disfruta de una noche llena
+                        de música y diversión.
+                    </p>
+
+                    <div class="datos">
+                        📍 San Salvador
+                        <br>
+                        📅 15 de septiembre
+                        <br>
+                        🕐 7:00 PM
+                    </div>
+
+                    <button
+                        onclick="mostrarEvento(
+                        'Festival de Música',
+                        '15 de septiembre de 2026',
+                        '7:00 PM',
+                        'San Salvador'
+                        )"
+                    >
+                        Ver detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENTO 2 -->
+
+            <div
+                class="evento"
+                data-categoria="fiesta"
+                data-nombre="Fiesta Tropical"
+            >
+
+                <img src="Eventos2.jfif" alt="Fiesta Tropical">
+
+                <div class="evento-contenido">
+
+                    <span class="etiqueta">
+                        Fiesta
+                    </span>
+
+                    <h3>
+                        Fiesta Tropical
+                    </h3>
+
+                    <p>
+                        Música, baile y diversión
+                        para disfrutar con amigos.
+                    </p>
+
+                    <div class="datos">
+                        📍 Santa Tecla
+                        <br>
+                        📅 20 de septiembre
+                        <br>
+                        🕐 8:00 PM
+                    </div>
+
+                    <button
+                        onclick="mostrarEvento(
+                        'Fiesta Tropical',
+                        '20 de septiembre de 2026',
+                        '8:00 PM',
+                        'Santa Tecla'
+                        )"
+                    >
+                        Ver detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENTO 3 -->
+
+            <div
+                class="evento"
+                data-categoria="conferencia"
+                data-nombre="Conferencia de Tecnología"
+            >
+
+                <img src="Eventos3.jfif" alt="Conferencia">
+
+                <div class="evento-contenido">
+
+                    <span class="etiqueta">
+                        Conferencia
+                    </span>
+
+                    <h3>
+                        Conferencia de Tecnología
+                    </h3>
+
+                    <p>
+                        Aprende sobre tecnología,
+                        innovación y futuro digital.
+                    </p>
+
+                    <div class="datos">
+                        📍 San Salvador
+                        <br>
+                        📅 25 de septiembre
+                        <br>
+                        🕐 9:00 AM
+                    </div>
+
+                    <button
+                        onclick="mostrarEvento(
+                        'Conferencia de Tecnología',
+                        '25 de septiembre de 2026',
+                        '9:00 AM',
+                        'San Salvador'
+                        )"
+                    >
+                        Ver detalles
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="sinResultados">
+            No se encontraron eventos.
+        </p>
+
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+
+    <section class="categorias" id="categorias">
+
+        <div class="titulo">
+
+            <p>EXPLORA</p>
+
+            <h2>Categorías</h2>
+
+        </div>
+
+
+        <div class="contenedor-categorias">
+
+            <div
+                class="categoria"
+                onclick="filtrarCategoria('musica')"
+            >
+                🎵
+                <h3>Música</h3>
+            </div>
+
+            <div
+                class="categoria"
+                onclick="filtrarCategoria('fiesta')"
+            >
+                🎉
+                <h3>Fiestas</h3>
+            </div>
+
+            <div
+                class="categoria"
+                onclick="filtrarCategoria('conferencia')"
+            >
+                💻
+                <h3>Conferencias</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+
+        <h2>
+            ¿Quieres organizar un evento?
+        </h2>
+
+        <p>
+            Ponte en contacto con nosotros.
+        </p>
+
+        <button class="boton">
+            Contáctanos
+        </button>
+
+    </section>
+
+
+    <!-- VENTANA DE DETALLES -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-contenido">
+
+            <button
+                class="cerrar"
+                onclick="cerrarModal()"
+            >
+                ×
+            </button>
+
+            <h2 id="modalTitulo"></h2>
+
+            <p>
+                📅 <strong>Fecha:</strong>
+                <span id="modalFecha"></span>
+            </p>
+
+            <p>
+                🕐 <strong>Hora:</strong>
+                <span id="modalHora"></span>
+            </p>
+
+            <p>
+                📍 <strong>Lugar:</strong>
+                <span id="modalLugar"></span>
+            </p>
+
+            <button class="boton">
+                🎟️ Reservar entrada
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <h3>✨ Eventia</h3>
+
+        <p>
+            © 2026 Eventia - Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+    <script src="Eventos.js"></script>
+
+</body>
+
+</html>

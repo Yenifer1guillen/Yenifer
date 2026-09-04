@@ -1,0 +1,20 @@
+ANIVERSARIOS · CARRITO CONECTADO
+
+No se cambió el CSS ni el diseño.
+
+Incluye:
+- Aniversarios.html
+- Aniversarios.js
+
+El JS creado conserva/agrega:
+- filtros Todos / Románticos / Elegantes / Minimalistas
+- calculadora de años
+- generador de dedicatoria
+- toast al agregar
+- carrito persistente con localStorage
+- contador persistente
+- mismo pastel agregado varias veces = aumenta cantidad
+- enlace del carrito a ../carrito.html
+- misma clave: huellasEstiloCarrito
+
+Pon ambos archivos dentro de la carpeta Aniversarios.

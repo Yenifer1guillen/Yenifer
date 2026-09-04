@@ -1,0 +1,23 @@
+CUMPLEAÑOS · CARRITO CONECTADO
+
+No se cambió el CSS ni el diseño.
+
+Incluye:
+- Cumpleaños.html
+- Cumpleaños.js
+
+Funciones:
+- filtros Todos / Coloridos / Elegantes / Clásicos
+- simulador de velitas
+- aviso al agregar
+- carrito persistente con localStorage
+- contador persistente
+- repetir producto aumenta cantidad
+- carrito abre ../carrito.html
+- misma clave: huellasEstiloCarrito
+
+Además, corregí los nombres enviados al carrito para que coincidan
+con el nombre visible de cada pastel (por ejemplo, Pastel de Melocotón)
+en lugar de algunos data-name antiguos que tenían nombres diferentes.
+
+Pon ambos archivos dentro de la carpeta Cumpleaños.

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galletas - Choppy Sweets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Galletas.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav-wrap">
+    <a href="../index.html" class="logo">🍪 Choppy <span>Sweets</span></a>
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="#galletas">Galletas</a>
+      <a href="../Carrito/Carrito.html">🛒 Carrito (<b id="cart-count">0</b>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">HORNEADAS CON CARIÑO</span>
+      <h1>Una galleta.<br><span>Luego vemos si era solo una.</span></h1>
+      <p>Crujientes por fuera, suaves por dentro y peligrosamente fáciles de terminar. Descubre nuestra colección de galletas artesanales.</p>
+      <a href="#galletas" class="main-btn">Ver galletas ↓</a>
+    </div>
+
+    <div class="cookie-scene" aria-hidden="true">
+      <div class="crumb c1"></div><div class="crumb c2"></div><div class="crumb c3"></div>
+      <div class="cookie cookie-back"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cookie cookie-main"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="spark s1">✦</span><span class="spark s2">✦</span>
+    </div>
+  </div>
+</section>
+
+<main class="cookies-section" id="galletas">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">LA CAJA DE GALLETAS</span>
+        <h2>Escoge tu favorita</h2>
+        <p>Siete opciones. La fuerza de voluntad ya es asunto tuyo 😭🍪</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todas</button>
+        <button class="filter" data-filter="chocolate">Chocolate</button>
+        <button class="filter" data-filter="rellena">Rellenas</button>
+        <button class="filter" data-filter="clasica">Clásicas</button>
+      </div>
+    </div>
+
+    <div class="cookies-grid">
+      <article class="cookie-card" data-category="chocolate">
+        <div class="cookie-img"><img src="Galleta1.jfif" alt="Galleta 1"><span class="badge">Favorita</span></div>
+        <div class="cookie-info"><small>CHOCOLATE</small><h3>Choco Chunk</h3><p>Galleta suave con abundantes trozos de chocolate.</p><div class="footer"><strong>$2.50</strong><button class="add" data-name="Choco Chunk" data-id="galleta-choco-chunk" data-precio="2.50" data-imagen="../Galletas/Galleta1.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="rellena">
+        <div class="cookie-img"><img src="Galleta2.jfif" alt="Galleta 2"></div>
+        <div class="cookie-info"><small>RELLENA</small><h3>Corazón Cremoso</h3><p>Centro cremoso y masa doradita para el antojo serio.</p><div class="footer"><strong>$3.00</strong><button class="add" data-name="Corazón Cremoso" data-id="galleta-coraz-n-cremoso" data-precio="3.00" data-imagen="../Galletas/Galleta2.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="clasica">
+        <div class="cookie-img"><img src="Galleta3.jfif" alt="Galleta 3"><span class="badge">Clásica</span></div>
+        <div class="cookie-info"><small>CLÁSICA</small><h3>Vainilla Dorada</h3><p>Simple, delicada y perfecta para acompañar una bebida fría.</p><div class="footer"><strong>$2.00</strong><button class="add" data-name="Vainilla Dorada" data-id="galleta-vainilla-dorada" data-precio="2.00" data-imagen="../Galletas/Galleta3.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="chocolate">
+        <div class="cookie-img"><img src="Galleta4.jfif" alt="Galleta 4"></div>
+        <div class="cookie-info"><small>CHOCOLATE</small><h3>Doble Choco</h3><p>Para cuando una cantidad razonable de chocolate no es suficiente.</p><div class="footer"><strong>$3.25</strong><button class="add" data-name="Doble Choco" data-id="galleta-doble-choco" data-precio="3.25" data-imagen="../Galletas/Galleta4.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="rellena">
+        <div class="cookie-img"><img src="Galleta5.jfif" alt="Galleta 5"></div>
+        <div class="cookie-info"><small>RELLENA</small><h3>Dulce Abrazo</h3><p>Suave por fuera con un centro dulce que hace todo el trabajo.</p><div class="footer"><strong>$3.00</strong><button class="add" data-name="Dulce Abrazo" data-id="galleta-dulce-abrazo" data-precio="3.00" data-imagen="../Galletas/Galleta5.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="clasica">
+        <div class="cookie-img"><img src="Galleta6.jfif" alt="Galleta 6"></div>
+        <div class="cookie-info"><small>CLÁSICA</small><h3>Butter Cookie</h3><p>Mantequillosa, ligera y peligrosamente fácil de repetir.</p><div class="footer"><strong>$2.25</strong><button class="add" data-name="Butter Cookie" data-id="galleta-butter-cookie" data-precio="2.25" data-imagen="../Galletas/Galleta6.jfif">Agregar</button></div></div>
+      </article>
+      <article class="cookie-card" data-category="chocolate">
+        <div class="cookie-img"><img src="Galleta7.jfif" alt="Galleta 7"><span class="badge dark">Especial</span></div>
+        <div class="cookie-info"><small>ESPECIAL</small><h3>Choppy Cookie</h3><p>Nuestra galleta especial: chocolate, textura suave y cero arrepentimientos.</p><div class="footer"><strong>$3.50</strong><button class="add" data-name="Choppy Cookie" data-id="galleta-choppy-cookie" data-precio="3.50" data-imagen="../Galletas/Galleta7.jfif">Agregar</button></div></div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<section class="box-section">
+  <div class="wrap box-grid">
+    <div>
+      <span class="eyebrow">ARMA TU CAJA</span>
+      <h2>¿Una sola? Mejor llevate varias.</h2>
+      <p>Selecciona el tamaño de tu caja y descubre cuántas galletas sobrevivirán el camino a casa.</p>
+    </div>
+    <div class="box-options">
+      <button class="box-btn active" data-box="4">4 <span>galletas</span></button>
+      <button class="box-btn" data-box="6">6 <span>galletas</span></button>
+      <button class="box-btn" data-box="12">12 <span>galletas</span></button>
+    </div>
+    <div class="box-result" id="box-result">Caja seleccionada: <b>4 galletas</b> 🍪</div>
+  </div>
+</section>
+
+<div class="toast" id="toast">Galleta agregada 🍪</div>
+<script src="Galletas.js"></script>
+</body>
+</html>

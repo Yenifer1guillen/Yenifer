@@ -1,0 +1,414 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#fff7f8;
+  --panel:#ffffff;
+  --pink:#e59aac;
+  --pink-dark:#c96b7b;
+  --pink-soft:#f7dce2;
+  --cream:#fff0e6;
+  --brown:#4c3b39;
+  --muted:#7d6b69;
+  --line:#efd4da;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:var(--bg);
+  color:var(--brown);
+  font-family:'Quicksand',sans-serif;
+}
+
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+
+.wrap{
+  width:min(1120px,calc(100% - 36px));
+  margin:auto;
+}
+
+/* NAV */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.94);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+
+.nav-wrap{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font:800 1.35rem 'Baloo 2',sans-serif;
+}
+
+.logo span{color:var(--pink-dark)}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:.86rem;
+  font-weight:700;
+  color:var(--muted);
+}
+
+.nav-links a:hover{color:var(--pink-dark)}
+
+/* HERO */
+.hero-pasteles{
+  overflow:hidden;
+  padding:82px 0 88px;
+  background:
+    radial-gradient(circle at 82% 25%,rgba(229,154,172,.22),transparent 27%),
+    linear-gradient(135deg,#fffafa,#fff0f3);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:60px;
+}
+
+.eyebrow{
+  color:var(--pink-dark);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:1.6px;
+}
+
+.hero-copy h1{
+  margin:14px 0 18px;
+  font:800 clamp(3rem,6vw,5.6rem)/.88 'Baloo 2',sans-serif;
+  letter-spacing:-2px;
+}
+
+.hero-copy h1 span{color:var(--pink-dark)}
+
+.hero-copy p{
+  max-width:600px;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.btn-primary{
+  display:inline-block;
+  margin-top:26px;
+  padding:13px 20px;
+  border-radius:14px;
+  background:var(--pink-dark);
+  color:white;
+  font-weight:800;
+  transition:.2s;
+}
+
+.btn-primary:hover{transform:translateY(-2px);background:#b85b6d}
+
+/* CAKE CSS */
+.hero-cake{
+  position:relative;
+  height:360px;
+  min-width:0;
+}
+
+.cake-plate{
+  position:absolute;
+  width:330px;
+  height:34px;
+  left:50%;
+  bottom:28px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:#ead3d7;
+  box-shadow:0 18px 30px rgba(111,69,77,.14);
+}
+
+.cake-layer{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:26px;
+  box-shadow:inset 0 -12px 0 rgba(0,0,0,.04);
+}
+
+.layer-1{
+  bottom:52px;
+  width:280px;
+  height:115px;
+  background:#d9869b;
+}
+
+.layer-2{
+  bottom:160px;
+  width:220px;
+  height:95px;
+  background:#f5c4ce;
+}
+
+.cake-cream{
+  position:absolute;
+  left:50%;
+  bottom:246px;
+  width:220px;
+  height:34px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:#fff6ee;
+}
+
+.berry{
+  position:absolute;
+  color:#c55469;
+  font-size:44px;
+  text-shadow:0 4px 8px rgba(0,0,0,.08);
+}
+
+.b1{left:42%;bottom:258px}
+.b2{left:51%;bottom:266px}
+.b3{left:58%;bottom:254px}
+
+.spark{
+  position:absolute;
+  color:#d38a45;
+  animation:float 2.5s ease-in-out infinite;
+}
+
+.s1{top:40px;left:18%;font-size:25px}
+.s2{top:20px;right:22%;font-size:18px;animation-delay:.5s}
+.s3{top:95px;right:12%;font-size:28px;animation-delay:1s}
+
+@keyframes float{
+  50%{transform:translateY(-10px) rotate(8deg)}
+}
+
+/* SECTION */
+.cakes-section{
+  padding:90px 0 100px;
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:36px;
+}
+
+.section-head h2{
+  margin:8px 0 4px;
+  font:800 clamp(2rem,4vw,3.2rem) 'Baloo 2',sans-serif;
+}
+
+.section-head p{color:var(--muted)}
+
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.filter{
+  border:1px solid var(--line);
+  padding:9px 14px;
+  border-radius:999px;
+  background:white;
+  color:var(--muted);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.filter:hover,.filter.active{
+  background:var(--pink-dark);
+  color:white;
+  border-color:var(--pink-dark);
+}
+
+/* CARDS */
+.cakes-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.cake-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 10px 24px rgba(132,76,87,.08);
+  transition:.25s;
+}
+
+.cake-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 17px 34px rgba(132,76,87,.16);
+}
+
+.cake-card.hidden{display:none}
+
+.cake-image{
+  position:relative;
+  height:210px;
+  overflow:hidden;
+  background:var(--pink-soft);
+}
+
+.cake-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:.35s;
+}
+
+.cake-card:hover img{transform:scale(1.04)}
+
+.tag{
+  position:absolute;
+  right:12px;
+  top:12px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:white;
+  color:var(--pink-dark);
+  font-size:.68rem;
+  font-weight:800;
+}
+
+.tag.dark{
+  background:#4d3635;
+  color:white;
+}
+
+.cake-info{
+  padding:19px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.cake-info small{
+  color:var(--pink-dark);
+  font-weight:800;
+  letter-spacing:1.2px;
+}
+
+.cake-info h3{
+  margin:6px 0 8px;
+  font:800 1.35rem 'Baloo 2',sans-serif;
+}
+
+.cake-info p{
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.55;
+  margin-bottom:20px;
+}
+
+.cake-footer{
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+
+.cake-footer strong{
+  font:800 1.25rem 'Baloo 2',sans-serif;
+}
+
+.order-btn{
+  border:0;
+  padding:10px 14px;
+  border-radius:12px;
+  background:var(--pink);
+  color:white;
+  font-weight:800;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.order-btn:hover{
+  background:var(--pink-dark);
+  transform:translateY(-1px);
+}
+
+/* FINAL */
+.final-banner{
+  padding:75px 0;
+  text-align:center;
+  background:#4b3637;
+  color:white;
+}
+
+.final-banner span{
+  color:#f7cbd5;
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:1.5px;
+}
+
+.final-banner h2{
+  max-width:760px;
+  margin:12px auto 22px;
+  font:800 clamp(2rem,4vw,3.3rem)/1 'Baloo 2',sans-serif;
+}
+
+.final-banner a{
+  display:inline-block;
+  padding:12px 17px;
+  border-radius:12px;
+  background:#fff;
+  color:#4b3637;
+  font-weight:800;
+}
+
+.toast{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  padding:13px 18px;
+  border-radius:12px;
+  background:#4b3637;
+  color:white;
+  font-weight:700;
+  opacity:0;
+  transform:translateY(20px);
+  pointer-events:none;
+  transition:.25s;
+  z-index:1500;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{text-align:center}
+  .hero-copy p{margin:auto}
+  .hero-cake{height:320px}
+  .cakes-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section-head{align-items:flex-start;flex-direction:column}
+}
+
+@media(max-width:620px){
+  .nav-wrap{padding:13px 0;align-items:flex-start;flex-direction:column}
+  .nav-links{width:100%;justify-content:space-between;gap:9px;font-size:.75rem}
+  .hero-pasteles{padding:55px 0}
+  .hero-cake{transform:scale(.82);margin:-15px 0}
+  .cakes-grid{grid-template-columns:1fr}
+  .cake-image{height:235px}
+}

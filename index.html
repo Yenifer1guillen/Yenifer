@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choppy Sweets</title>
+  <link rel="icon" type="image/png" href="logo-choppy-sweets.jfif">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================
+       ENCABEZADO
+  ========================== -->
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="logo-choppy-sweets.jfif" alt="Choppy Sweets" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="brand-fallback">Choppy Sweets<small>BAKERY</small></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Inicio</a>
+        <a href="pasteles/Pasteles.html">Pasteles</a>
+      <a href="postres/Postres.html">Postres</a>
+      <a href="galletas/Galletas.html">Galletas</a>
+      <a href="eventos/Eventos.html">Eventos</a>
+      <a href="donas/Donas.html">Donas</a>
+      <a href="cupcakes/Cupcakes.html">Cupcakes</a>
+      <a href="cumpleaños/Cumpleaños.html">Cumpleaños</a>
+      <a href="aniversarios/Aniversarios.html">Aniversarios</a>
+      <a href="registro/Registro.html">Registro</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Buscar" id="searchBtn">⌕</button>
+      <a class="icon-btn cart cart-link" href="carrito/Carrito.html" aria-label="Abrir carrito">🛍
+        <span id="cartCount">0</span>
+      </a>
+      <a href="contacto/Contacto.html" class="order-btn">Ordenar</a>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section class="hero">
+    <div class="brush brush-top"></div>
+    <div class="hero-copy">
+      <span class="mini">HECHO CON CARIÑO</span>
+      <h1>La vida es mejor<br>con algo <em>dulce.</em></h1>
+      <p>
+        Pasteles y postres preparados con cariño,
+        buenos ingredientes y ese toque especial
+        que hace bonito cualquier momento.
+      </p>
+      <a href="logo-choppy-sweets.jfif" class="primary-btn">Explorar pasteles</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="Logo_de_pasteles.jfif" alt="Pastel de Choppy Sweets">
+      <span class="placeholder">Pon aquí<br><b>hero-cupcake.jpg</b></span>
+    </div>
+    <div class="brush brush-bottom"></div>
+  </section>
+
+  <!-- =========================
+       BENEFICIOS
+  ========================== -->
+  <section class="benefits">
+    <article>
+      <div class="benefit-icon">🧁</div>
+      <div>
+        <h3>Recién horneado</h3>
+        <p>Preparado con dedicación para cada pedido.</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="benefit-icon">🌿</div>
+      <div>
+        <h3>Ingredientes seleccionados</h3>
+        <p>Sabores suaves, frescos y deliciosos.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- =========================
+       COLECCIONES
+  ========================== -->
+  <section class="collections">
+    <article class="collection-card rose">
+      <h2>Pasteles<br>Clásicos</h2>
+      <div class="collection-image">
+        <img src="Pastel_clasico.jfif" alt="Pastel clásico">
+        <span class="placeholder">pastel-clasico.jpg</span>
+      </div>
+      <footer>
+        <p>Sabores que nunca pasan de moda.</p>
+        <a href="pasteles/pasteles.html">→</a>
+      </footer>
+    </article>
+
+    <article class="collection-card cream">
+      <h2>Postres<br>Especiales</h2>
+      <div class="collection-image">
+        <img src="Postres_personalizados.jfif" alt="Postre de chocolate">
+        <span class="placeholder">postre-chocolate.jpg</span>
+      </div>
+      <footer>
+        <p>Dulces, intensos e irresistibles.</p>
+        <a href="postres/postres.html">→</a>
+      </footer>
+    </article>
+
+    <article class="collection-card lavender">
+      <h2>Creaciones<br>Personalizadas</h2>
+      <div class="collection-image">
+        <img src="pasteles_personalizados.jfif" alt="Pastel personalizado">
+        <span class="placeholder">pastel-personalizado.jpg</span>
+      </div>
+      <footer>
+        <p>Hechos a tu gusto y para tu ocasión.</p>
+        <a href="aniversarios/aniversarios.html">→</a>
+      </footer>
+    </article>
+  </section>
+
+  <!-- =========================
+       CAFÉ + POSTRE
+  ========================== -->
+  <section class="pairing">
+    <div class="pairing-image">
+      <img src="Cafe_postre.jfif" alt="Taza de café">
+      <span class="placeholder">Pon aquí<br><b>cafe.jpg</b></span>
+    </div>
+
+    <div class="pairing-copy">
+      <span class="mini">UN MOMENTO DULCE</span>
+      <h2>La pareja perfecta<br>para cada antojo.</h2>
+      <p>
+        Un café, un postre y unos minutos tranquilos.
+        A veces no hace falta más para mejorar el día.
+      </p>
+      <a href="postres/postres.html" class="secondary-btn">Descubrir postres</a>
+    </div>
+  </section>
+
+  <!-- =========================
+       NOSOTROS
+  ========================== -->
+  <section class="about" id="nosotros">
+    <span class="mini">CHOPPY SWEETS</span>
+    <h2>Pequeños detalles,<br>grandes momentos.</h2>
+    <p>
+      Creamos pasteles y postres para cumpleaños, aniversarios,
+      celebraciones y también para esos días en los que simplemente
+      se antoja algo dulce.
+    </p>
+  </section>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <strong>Choppy Sweets</strong>
+      <small>Guillén</small>
+      <p>Dulces momentos hechos con cariño.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="TikTok">♪</a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Enlaces</h4>
+      <a href="index.html">Inicio</a>
+      <a href="pasteles/Pasteles.html">Pasteles</a>
+      <a href="postres/Postres.html">Postres</a>
+      <a href="galletas/Galletas.html">Galletas</a>
+    </div>
+
+    <div>
+      <h4>Atención</h4>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Pedidos</a>
+      <a href="#">Términos</a>
+      <a href="contacto/Contacto.html">Contacto</a>
+    </div>
+
+    <div>
+      <h4>Visítanos</h4>
+      <p>📍 Agrega aquí tu dirección</p>
+      <p>☎ +503 7710-5709</p>
+      <p>✉ choppysweets@gmail.com</p>
+    </div>
+
+    <div class="copyright">© 2026 Choppy Sweets. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- Buscador sencillo -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-box">
+      <button id="closeSearch" class="close-search">×</button>
+      <h3>¿Qué se te antoja?</h3>
+      <input type="text" id="searchInput" placeholder="Pasteles, postres, galletas...">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

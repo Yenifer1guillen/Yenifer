@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donas - Choppy Sweets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Donas.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav-wrap">
+    <a href="../index.html" class="logo">🍩 Choppy <span>Sweets</span></a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="#donas">Donas</a>
+      <a href="../Carrito/Carrito.html">🛒 Carrito (<b id="cart-count">0</b>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <span class="eyebrow">DULCES, SUAVES Y PELIGROSAS</span>
+      <h1>Donas para mejorar<br><span>cualquier día.</span></h1>
+
+      <p>
+        Glaseadas, rellenas, con chocolate o con colores.
+        Cinco donas, cinco excusas perfectas para darte un gusto.
+      </p>
+
+      <a href="#donas" class="main-btn">Ver colección ↓</a>
+    </div>
+
+    <div class="donut-scene" aria-hidden="true">
+      <div class="donut big">
+        <div class="hole"></div>
+        <span class="sprinkle a"></span>
+        <span class="sprinkle b"></span>
+        <span class="sprinkle c"></span>
+        <span class="sprinkle d"></span>
+        <span class="sprinkle e"></span>
+        <span class="sprinkle f"></span>
+      </div>
+
+      <div class="donut small">
+        <div class="hole"></div>
+      </div>
+
+      <span class="spark s1">✦</span>
+      <span class="spark s2">✦</span>
+      <span class="spark s3">✦</span>
+    </div>
+
+  </div>
+</section>
+
+<main class="donuts-section" id="donas">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">NUESTRAS DONAS</span>
+        <h2>Escoge tu antojo</h2>
+        <p>Advertencia: mirar demasiado tiempo puede causar hambre</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="todas">Todas</button>
+        <button class="filter" data-filter="chocolate">Chocolate</button>
+        <button class="filter" data-filter="frutal">Frutales</button>
+        <button class="filter" data-filter="clasica">Clásicas</button>
+      </div>
+    </div>
+
+    <div class="donuts-grid">
+
+      <article class="donut-card" data-category="Chocolate">
+        <div class="donut-image">
+          <img src="Dona1.jfif" alt="Dona de fresa">
+          <span class="badge">Favorita</span>
+        </div>
+
+        <div class="donut-info">
+          <small>chocolate</small>
+          <h3>Dona de chocolate</h3>
+          <p>Glaseado suave de chocolate con un acabado dulce.</p>
+
+          <div class="footer">
+            <strong>$2.50</strong>
+            <button class="add" data-name="Dona de chocolate" data-id="dona-dona-de-chocolate" data-precio="2.50" data-imagen="../Donas/Dona1.jfif">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="donut-card" data-category="vainilla">
+        <div class="donut-image">
+          <img src="Dona2.jfif" alt="Dona de vainilla">
+        </div>
+
+        <div class="donut-info">
+          <small>VAINILLA</small>
+          <h3>Dona de vainilla</h3>
+          <p>Glaseado suave de vainilla con un acabado dulce.</p>
+
+          <div class="footer">
+            <strong>$2.50</strong>
+            <button class="add" data-name="Dona de vainilla" data-id="dona-dona-de-vainilla" data-precio="2.50" data-imagen="../Donas/Dona2.jfif">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="donut-card" data-category="clasica">
+        <div class="donut-image">
+          <img src="Dona3.jfif" alt="Dona clásica">
+          <span class="badge">Clásica</span>
+        </div>
+
+        <div class="donut-info">
+          <small>CLÁSICA</small>
+          <h3>Chocolate con chispas</h3>
+          <p>La clásica de siempre: sencilla, suave y demasiado fácil de repetir.</p>
+
+          <div class="footer">
+            <strong>$2.00</strong>
+            <button class="add" data-name="Chocolate con chispas" data-id="dona-chocolate-con-chispas" data-precio="2.00" data-imagen="../Donas/Dona3.jfif">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="donut-card" data-category="chocolate">
+        <div class="donut-image">
+          <img src="Dona4.jfif" alt="Dona de chocolate">
+        </div>
+
+        <div class="donut-info">
+          <small>chocolate</small>
+          <h3>Dona de chocolate y vainilla</h3>
+          <p>Glaseado de chocolate y vainilla con un acabado dulce.</p>
+
+          <div class="footer">
+            <strong>$2.80</strong>
+            <button class="add" data-name="Dona de chocolate y vainilla" data-id="dona-dona-de-chocolate-y-vainilla" data-precio="2.80" data-imagen="../Donas/Dona4.jfif">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="donut-card" data-category="chocolate">
+        <div class="donut-image">
+          <img src="Dona6.jfif" alt="Dona especial">
+          <span class="badge dark">Especial</span>
+        </div>
+
+        <div class="donut-info">
+          <small>ESPECIAL</small>
+          <h3>Choppy Donut</h3>
+          <p>Dona cubierta de un glaseado de fresa.</p>
+
+          <div class="footer">
+            <strong>$3.25</strong>
+            <button class="add" data-name="Choppy Donut" data-id="dona-choppy-donut" data-precio="3.25" data-imagen="../Donas/Dona6.jfif">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<section class="builder-section">
+  <div class="wrap builder">
+
+    <div class="builder-copy">
+      <span class="eyebrow">ARMA TU CAJA</span>
+      <h2>¿Cuántas donas van hoy?</h2>
+      <p>Escoge un tamaño y deja que el antojo tome las decisiones importantes.</p>
+    </div>
+
+    <div class="box-options">
+      <button class="box-btn active" data-box="4">
+        <b>4</b>
+        <span>donas</span>
+      </button>
+
+      <button class="box-btn" data-box="6">
+        <b>6</b>
+        <span>donas</span>
+      </button>
+
+      <button class="box-btn" data-box="12">
+        <b>12</b>
+        <span>donas</span>
+      </button>
+    </div>
+
+    <div class="box-result" id="box-result">
+      Caja seleccionada: <strong>4 donas</strong> 🍩
+    </div>
+
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span>CHOPPY SWEETS</span>
+    <h2>Una dona alegra el día.<br>Una caja completa... también.</h2>
+    <a href="../Contacto/Contacto.html">Pedir una caja especial</a>
+  </div>
+</section>
+
+<div class="toast" id="toast">Dona agregada 🍩</div>
+
+<script src="Donas.js"></script>
+</body>
+</html>

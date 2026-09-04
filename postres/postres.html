@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postres - Choppy Sweets</title>
+
+  <!-- Fuentes globales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos globales y propios de Postres -->
+  <link rel="stylesheet" href="../postres/postres.css">
+</head>
+<body>
+
+  <!-- NAV SUPERIOR -->
+  <header class="nav">
+    <div class="wrap">
+      <a href="../index.html" class="logo"><span class="logo-cake">🍰</span> Choppy<span>Sweets</span></a>
+      <div class="nav-actions">
+        <a href="../carrito/carrito.html" class="cart">🛒 Carrito (<span id="cart-count">0</span>)</a>
+        <a href="../index.html">← Volver al inicio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL DE POSTRES -->
+  <section class="postres-section">
+    <div class="wrap">
+      
+      <div class="section-head">
+        <span class="eyebrow">Edición Especial</span>
+        <h2>Nuestra Colección de Postres</h2>
+        <p>Aprovecha nuestros descuentos de temporada hechos a mano con amor.</p>
+      </div>
+
+      <!-- Cuadrícula 2x2 estilo plantilla visual -->
+      <div class="postres-grid">
+
+        <!-- Tarjeta 1: Postre de fresas -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="imagen1"><img class="postre-img" src="../Postres/Imagen1.jpeg" alt="Pastel de fresas" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Variedad</span>
+            <h3>Postre de Fresas</h3>
+            <p>Glaseado cremoso en tono rojo y fresas frescas.</p>
+            <div class="postre-footer">
+              <span class="price">$3.50</span>
+              <button class="btn-order-postre" data-name="Postre de Fresas" data-id="postre-postre-de-fresas" data-precio="3.50" data-imagen="../Postres/Imagen1.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Postre de Arandanos -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="Imagen2"><img class="postre-img" src="../postres/Imagen2.jpeg" alt="Pastel de arandanos" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Celebración</span>
+            <h3>Postre de Arandanos</h3>
+            <p>Cubierto con crema y arandanos frescos.</p>
+            <div class="postre-footer">
+              <span class="price">$3.75</span>
+              <button class="btn-order-postre" data-name="Postre de Arandanos" data-id="postre-postre-de-arandanos" data-precio="3.75" data-imagen="../postres/Imagen2.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: Postre de crema y limón -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="Imagen3"><img class="postre-img" src="../postres/Imagen3.jpeg " alt="Pastel de limon" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Clásicos</span>
+            <h3>Postre de Limón</h3>
+            <p>Masa suave horneada diariamente con cobertura de limón y toques de cascara de limón.</p>
+            <div class="postre-footer">
+              <span class="price">$2.99</span>
+              <button class="btn-order-postre" data-name="Postre de Limón" data-id="postre-postre-de-lim-n" data-precio="2.99" data-imagen="../postres/Imagen3.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4 : Postre de chocolate -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="Imagen4"><img class="postre-img" src="../postres/Imagen4.jpeg" alt="Postre de Oreo" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Crujientes</span>
+            <h3>Postre con crema y oreo</h3>
+            <p>Postre rellena de crema y oreo con sabor a chocolate.</p>
+            <div class="postre-footer">
+              <span class="price">$2.75</span>
+              <button class="btn-order-postre" data-name="Postre con crema y oreo" data-id="postre-postre-con-crema-y-oreo" data-precio="2.75" data-imagen="../postres/Imagen4.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Tarjeta 4: Postre de crema y dulce de leche -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="Imagen5"><img class="postre-img" src="../postres/Imagen5.jpeg" alt="Postre de crema y dulce de leche" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Crujientes</span>
+            <h3>Postre de crema y dulce de leche</h3>
+            <p>Postre rellena de crema y dulce de leche con sabor a vainilla.</p>
+            <div class="postre-footer">
+              <span class="price">$3.00</span>
+              <button class="btn-order-postre" data-name="Postre de crema y dulce de leche" data-id="postre-postre-de-crema-y-dulce-de-leche" data-precio="3.00" data-imagen="../postres/Imagen5.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4:Postre de chocolate -->
+        <article class="postre-card">
+          <div class="postre-thumb">
+            <span class="badge-discount">10% OFF</span>
+            <span class="Imagen6"><img class="postre-img" src="../postres/Imagen6.jpeg" alt="Postre de chocolate" loading="lazy"></span>
+          </div>
+          <div class="postre-info">
+            <span class="category-tag">Crujientes</span>
+            <h3>Postre de chocolate</h3>
+            <p>Postre relleno de chocolate con sabor a vainilla.</p>
+            <div class="postre-footer">
+              <span class="price">$3.50</span>
+              <button class="btn-order-postre" data-name="Postre de chocolate" data-id="postre-postre-de-chocolate" data-precio="3.50" data-imagen="../postres/Imagen6.jpeg">Ordenar ahora</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="../postres/postres.js"></script>
+</body>
+</html>

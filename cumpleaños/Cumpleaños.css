@@ -1,0 +1,584 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#fff9f3;
+  --purple:#8d71bd;
+  --purple-dark:#72579f;
+  --pink:#ee91ac;
+  --pink-dark:#d9688a;
+  --yellow:#f4c968;
+  --blue:#7db6cf;
+  --ink:#4a3d4a;
+  --muted:#806f7f;
+  --line:#ecd9e6;
+  --white:#fff;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Quicksand',sans-serif;
+}
+
+a{text-decoration:none;color:inherit}
+button,input{font:inherit}
+
+.wrap{
+  width:min(1120px,calc(100% - 36px));
+  margin:auto;
+}
+
+/* NAV */
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.95);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+
+.nav-wrap{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font:800 1.35rem 'Baloo 2',sans-serif;
+}
+
+.logo span{
+  color:var(--pink-dark);
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  color:var(--muted);
+  font-size:.86rem;
+  font-weight:700;
+}
+
+.nav-links a:hover{
+  color:var(--pink-dark);
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:84px 0 90px;
+  background:
+    radial-gradient(circle at 80% 30%,rgba(141,113,189,.18),transparent 28%),
+    radial-gradient(circle at 20% 80%,rgba(238,145,172,.18),transparent 25%),
+    linear-gradient(135deg,#fffaf5,#fff0f6);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+
+.eyebrow{
+  color:var(--pink-dark);
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:1.6px;
+}
+
+.hero h1{
+  margin:13px 0 18px;
+  font:800 clamp(3rem,6vw,5.5rem)/.88 'Baloo 2',sans-serif;
+  letter-spacing:-2px;
+}
+
+.hero h1 span{
+  color:var(--purple-dark);
+}
+
+.hero p{
+  max-width:590px;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.main-btn{
+  display:inline-block;
+  margin-top:26px;
+  padding:13px 20px;
+  border-radius:14px;
+  background:var(--purple-dark);
+  color:#fff;
+  font-weight:800;
+  transition:.2s;
+}
+
+.main-btn:hover{
+  transform:translateY(-2px);
+  background:#624789;
+}
+
+/* CONFETTI */
+
+.confetti{
+  position:absolute;
+  font-size:20px;
+  opacity:.65;
+  animation:float 3s ease-in-out infinite;
+}
+
+.c1{left:6%;top:20%;color:var(--yellow)}
+.c2{left:12%;bottom:18%;color:var(--purple)}
+.c3{left:48%;top:10%;color:var(--pink)}
+.c4{right:9%;top:13%;color:var(--blue)}
+.c5{right:5%;bottom:20%;color:var(--yellow)}
+.c6{right:38%;bottom:8%;color:var(--pink)}
+
+@keyframes float{
+  50%{transform:translateY(-10px) rotate(10deg)}
+}
+
+/* ARTE DE TORTA */
+
+.birthday-art{
+  position:relative;
+  height:360px;
+}
+
+.plate{
+  position:absolute;
+  width:310px;
+  height:35px;
+  left:50%;
+  bottom:28px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:#ead8ec;
+  box-shadow:0 18px 30px rgba(85,60,95,.12);
+}
+
+.cake-base{
+  position:absolute;
+  left:50%;
+  bottom:53px;
+  width:260px;
+  height:120px;
+  transform:translateX(-50%);
+  border-radius:25px 25px 16px 16px;
+  background:linear-gradient(90deg,#e884a2,#f4a6bc,#e884a2);
+}
+
+.cake-top{
+  position:absolute;
+  left:50%;
+  bottom:166px;
+  width:200px;
+  height:88px;
+  transform:translateX(-50%);
+  border-radius:22px;
+  background:linear-gradient(90deg,#9575c1,#b59cd4,#9575c1);
+}
+
+.cream{
+  position:absolute;
+  left:50%;
+  bottom:243px;
+  width:200px;
+  height:32px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:#fff7e9;
+}
+
+.candle{
+  position:absolute;
+  bottom:266px;
+  width:12px;
+  height:52px;
+  border-radius:4px;
+  background:repeating-linear-gradient(45deg,#fff 0 6px,#ef8dad 6px 12px);
+}
+
+.candle1{left:42%}
+.candle2{left:50%}
+.candle3{left:58%}
+
+.candle i{
+  position:absolute;
+  left:50%;
+  top:-15px;
+  width:10px;
+  height:16px;
+  transform:translateX(-50%);
+  border-radius:50% 50% 50% 50% / 70% 70% 35% 35%;
+  background:#f0a43d;
+  box-shadow:0 0 12px rgba(240,164,61,.45);
+}
+
+.balloon{
+  position:absolute;
+  width:55px;
+  height:68px;
+  border-radius:50%;
+  opacity:.85;
+}
+
+.balloon::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:67px;
+  height:80px;
+  border-left:1px solid rgba(90,70,95,.35);
+}
+
+.b1{left:4%;top:38px;background:var(--pink)}
+.b2{right:2%;top:76px;background:var(--blue)}
+.b3{right:18%;top:10px;background:var(--yellow)}
+
+/* SECCION */
+
+.birthday-section{
+  padding:90px 0;
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:35px;
+}
+
+.section-head h2,
+.age-card h2{
+  margin:8px 0 4px;
+  font:800 clamp(2rem,4vw,3.1rem) 'Baloo 2',sans-serif;
+}
+
+.section-head p,
+.age-card p{
+  color:var(--muted);
+}
+
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.filter{
+  padding:9px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  color:var(--muted);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.filter.active,
+.filter:hover{
+  background:var(--purple-dark);
+  border-color:var(--purple-dark);
+  color:#fff;
+}
+
+/* TARJETAS */
+
+.cakes-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;
+}
+
+.cake-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:19px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 9px 23px rgba(107,75,110,.08);
+  transition:.25s;
+}
+
+.cake-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(107,75,110,.15);
+}
+
+.cake-card.hidden{
+  display:none;
+}
+
+.cake-img{
+  position:relative;
+  height:180px;
+  overflow:hidden;
+  background:#f4e8f5;
+}
+
+.cake-img img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.35s;
+}
+
+.cake-card:hover img{
+  transform:scale(1.04);
+}
+
+.badge{
+  position:absolute;
+  top:11px;
+  right:11px;
+  padding:6px 9px;
+  border-radius:999px;
+  background:#fff;
+  color:var(--pink-dark);
+  font-size:.64rem;
+  font-weight:800;
+}
+
+.badge.special{
+  background:var(--purple-dark);
+  color:#fff;
+}
+
+.cake-info{
+  padding:17px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.cake-info small{
+  color:var(--purple-dark);
+  font-size:.67rem;
+  font-weight:800;
+  letter-spacing:1.1px;
+}
+
+.cake-info h3{
+  margin:5px 0 7px;
+  font:800 1.24rem 'Baloo 2',sans-serif;
+}
+
+.cake-info p{
+  margin-bottom:17px;
+  color:var(--muted);
+  font-size:.82rem;
+  line-height:1.5;
+}
+
+.footer{
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+
+.footer strong{
+  font:800 1.15rem 'Baloo 2',sans-serif;
+}
+
+.add{
+  border:0;
+  padding:9px 12px;
+  border-radius:10px;
+  background:var(--pink);
+  color:#fff;
+  font-size:.78rem;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.add:hover{
+  background:var(--pink-dark);
+}
+
+/* EDAD */
+
+.age-section{
+  padding:80px 0;
+  background:linear-gradient(135deg,#f4e9ff,#fff0f5);
+}
+
+.age-card{
+  max-width:850px;
+  text-align:center;
+}
+
+.age-card p{
+  max-width:650px;
+  margin:auto;
+}
+
+.age-controls{
+  margin:28px auto 18px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.age-controls input{
+  width:110px;
+  padding:12px 14px;
+  border:1px solid #dac7e9;
+  border-radius:12px;
+  outline:none;
+  background:#fff;
+  color:var(--ink);
+  font-weight:800;
+  text-align:center;
+}
+
+.age-controls button{
+  border:0;
+  padding:12px 17px;
+  border-radius:12px;
+  background:var(--purple-dark);
+  color:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.candles-result{
+  color:var(--purple-dark);
+  font-weight:700;
+}
+
+/* FINAL */
+
+.final{
+  padding:75px 0;
+  text-align:center;
+  background:#493b50;
+  color:#fff;
+}
+
+.final span{
+  color:#f0b6ca;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:1.5px;
+}
+
+.final h2{
+  max-width:780px;
+  margin:12px auto 22px;
+  font:800 clamp(2rem,4vw,3.3rem)/1 'Baloo 2',sans-serif;
+}
+
+.final a{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:12px;
+  background:#fff;
+  color:#493b50;
+  font-weight:800;
+}
+
+/* TOAST */
+
+.toast{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:1500;
+  padding:13px 18px;
+  border-radius:12px;
+  background:#493b50;
+  color:#fff;
+  font-weight:700;
+  opacity:0;
+  transform:translateY(18px);
+  pointer-events:none;
+  transition:.25s;
+}
+
+.toast.show{
+  opacity:1;
+  transform:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy{
+    text-align:center;
+  }
+
+  .hero-copy p{
+    margin:auto;
+  }
+
+  .cakes-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .section-head{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+@media(max-width:620px){
+  .nav-wrap{
+    padding:13px 0;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .nav-links{
+    width:100%;
+    justify-content:space-between;
+    gap:8px;
+    font-size:.75rem;
+  }
+
+  .hero{
+    padding:55px 0;
+  }
+
+  .birthday-art{
+    transform:scale(.82);
+    margin:-25px 0;
+  }
+
+  .cakes-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cake-img{
+    height:235px;
+  }
+
+  .age-controls{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .age-controls input,
+  .age-controls button{
+    width:min(100%,280px);
+  }
+}

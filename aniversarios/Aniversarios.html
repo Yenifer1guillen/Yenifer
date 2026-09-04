@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniversarios - Choppy Sweets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="Aniversarios.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav-wrap">
+    <a href="../index.html" class="logo">💗 Choppy <span>Sweets</span></a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="#coleccion">Aniversarios</a>
+      <a href="../carrito/Carrito.html">🛒 Carrito (<b id="cart-count">0</b>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="floating-heart h1">♡</div>
+  <div class="floating-heart h2">♥</div>
+  <div class="floating-heart h3">♡</div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy"> 
+      <span class="eyebrow">HECHOS PARA CELEBRAR JUNTOS</span>
+      <h1>Aniversarios<br><span>que saben a recuerdo.</span></h1>
+      <p>
+        Un detalle bonito puede convertir una fecha especial en un momento que se queda.
+        Elegí un pastel, escribí una dedicatoria y celebrá ese “un año más” como se merece.
+      </p>
+      <a href="#coleccion" class="main-btn">Explorar pasteles ♡</a>
+    </div>
+
+    <div class="anniversary-art" aria-hidden="true">
+      <div class="plate"></div>
+      <div class="cake"></div>
+      <div class="icing"></div>
+      <div class="rose r1"></div>
+      <div class="rose r2"></div>
+      <div class="rose r3"></div>
+      <div class="heart-stick">♡</div>
+      <div class="message">Juntos<br>siempre</div>
+      <span class="spark s1">✦</span>
+      <span class="spark s2">✦</span>
+    </div>
+  </div>
+</section>
+
+<main class="collection-section" id="coleccion">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">NUESTRA COLECCIÓN</span>
+        <h2>Pasteles para decir “feliz aniversario”</h2>
+        <p>Románticos, elegantes o sencillos. Lo importante es que haya pastel 😭💗</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="romantico">Románticos</button>
+        <button class="filter" data-filter="elegante">Elegantes</button>
+        <button class="filter" data-filter="minimalista">Minimalistas</button>
+      </div>
+    </div>
+
+    <div class="main-layout">
+
+      <aside class="love-panel">
+        <span class="eyebrow">CALCULADORA DE AMOR 💕</span>
+        <h3>¿Cuántos años celebran?</h3>
+        <p>Escribí los años y te damos un mensajito.</p>
+
+        <div class="love-control">
+          <input id="years-input" type="number" min="1" max="100" value="1">
+          <button id="love-btn">Calcular</button>
+        </div>
+
+        <div class="love-result" id="love-result">
+          <strong>¡Qué bonito! ✨</strong>
+          <span>Están creando recuerdos desde hace 1 año.</span>
+        </div>
+      </aside>
+
+      <div class="cakes-grid">
+
+        <article class="cake-card" data-category="romantico">
+          <div class="cake-img">
+            <img src="Aniversario1.jfif" alt="Pastel aniversario Amor Eterno">
+            <span class="badge">Favorito</span>
+          </div>
+          <div class="cake-info">
+            <small>ROMÁNTICO</small>
+            <h3>Amor Eterno</h3>
+            <p>Detalles rosados y una presentación hecha para una fecha especial.</p>
+            <div class="footer"><strong>$28.00</strong><button class="add" data-name="Amor Eterno" data-id="aniversario-amor-eterno" data-precio="28.00" data-imagen="../Aniversarios/Aniversario1.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="elegante">
+          <div class="cake-img"><img src="Aniversario2.jfif" alt="Pastel Siempre Juntos"></div>
+          <div class="cake-info">
+            <small>ELEGANTE</small>
+            <h3>Siempre Juntos</h3>
+            <p>Un diseño sobrio, bonito y perfecto para una celebración especial.</p>
+            <div class="footer"><strong>$30.00</strong><button class="add" data-name="Siempre Juntos" data-id="aniversario-siempre-juntos" data-precio="30.00" data-imagen="../Aniversarios/Aniversario2.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="romantico">
+          <div class="cake-img"><img src="Aniversario3.jfif" alt="Pastel Te Amo"><span class="badge">Romántico</span></div>
+          <div class="cake-info">
+            <small>ROMÁNTICO</small>
+            <h3>Te Amo</h3>
+            <p>Suave, delicado y con el mensaje bastante claro JAJAJA 💗</p>
+            <div class="footer"><strong>$26.00</strong><button class="add" data-name="Te Amo" data-id="aniversario-te-amo" data-precio="26.00" data-imagen="../Aniversarios/Aniversario3.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="minimalista">
+          <div class="cake-img"><img src="Aniversario4.jfif" alt="Pastel Nuestro Lugar Feliz"></div>
+          <div class="cake-info">
+            <small>MINIMALISTA</small>
+            <h3>Nuestro Lugar Feliz</h3>
+            <p>Un diseño limpio y delicado para celebrar sin exagerar.</p>
+            <div class="footer"><strong>$24.00</strong><button class="add" data-name="Nuestro Lugar Feliz" data-id="aniversario-nuestro-lugar-feliz" data-precio="24.00" data-imagen="../Aniversarios/Aniversario4.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="romantico">
+          <div class="cake-img"><img src="Aniversario5.jfif" alt="Pastel Fresas y Amor"></div>
+          <div class="cake-info">
+            <small>ROMÁNTICO</small>
+            <h3>Fresas & Amor</h3>
+            <p>Fresas, crema suave y suficiente romance para sobrevivir la foto.</p>
+            <div class="footer"><strong>$27.00</strong><button class="add" data-name="Fresas & Amor" data-id="aniversario-fresas-amor" data-precio="27.00" data-imagen="../Aniversarios/Aniversario5.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="elegante">
+          <div class="cake-img"><img src="Aniversario6.jfif" alt="Pastel Por Siempre Tú y Yo"></div>
+          <div class="cake-info">
+            <small>ELEGANTE</small>
+            <h3>Por Siempre Tú y Yo</h3>
+            <p>Tonos suaves y detalles bonitos para celebrar juntos.</p>
+            <div class="footer"><strong>$29.00</strong><button class="add" data-name="Por Siempre Tú y Yo" data-id="aniversario-por-siempre-t-y-yo" data-precio="29.00" data-imagen="../Aniversarios/Aniversario6.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="minimalista">
+          <div class="cake-img"><img src="Aniversario7.jfif" alt="Pastel Un Año Más"></div>
+          <div class="cake-info">
+            <small>MINIMALISTA</small>
+            <h3>Un Año Más Juntos</h3>
+            <p>Sencillo, elegante y con una dedicatoria que hace todo el trabajo.</p>
+            <div class="footer"><strong>$25.00</strong><button class="add" data-name="Un Año Más Juntos" data-id="aniversario-un-a-o-m-s-juntos" data-precio="25.00" data-imagen="../Aniversarios/Aniversario7.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+        <article class="cake-card" data-category="elegante">
+          <div class="cake-img"><img src="Aniversario8.jfif" alt="Pastel Mi Persona Favorita"><span class="badge special">Especial</span></div>
+          <div class="cake-info">
+            <small>ESPECIAL</small>
+            <h3>Mi Persona Favorita</h3>
+            <p>Un pastel dulce con un mensaje que no necesita explicación.</p>
+            <div class="footer"><strong>$31.00</strong><button class="add" data-name="Mi Persona Favorita" data-id="aniversario-mi-persona-favorita" data-precio="31.00" data-imagen="../Aniversarios/Aniversario8.jfif">Agregar</button></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="message-section">
+  <div class="wrap message-card">
+    <div>
+      <span class="eyebrow">DEJA UN MENSAJE ESPECIAL 💌</span>
+      <h2>Escribí una pequeña dedicatoria</h2>
+      <p>No se guarda; solamente genera una tarjetita dentro de la página.</p>
+    </div>
+
+    <div class="message-tools">
+      <textarea id="message-input" maxlength="130" placeholder="Ej: Gracias por otro año bonito a tu lado..."></textarea>
+      <button id="message-btn">Generar tarjeta ♡</button>
+    </div>
+
+    <div class="love-letter" id="love-letter">
+      <small>PARA MI PERSONA FAVORITA</small>
+      <p>Tu mensaje aparecerá aquí 💗</p>
+      <span>— Choppy Sweets</span>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span>CHOPPY SWEETS · ANIVERSARIOS</span>
+    <h2>Un año más juntos.<br>Una razón más para celebrar.</h2>
+    <a href="../Contacto/Contacto.html">Consultar pastel personalizado</a>
+  </div>
+</section>
+
+<div class="toast" id="toast">Pastel agregado 💗</div>
+
+<script src="Aniversarios.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+POSTRES · CARRITO CONECTADO
+
+No se cambió el diseño ni el CSS.
+
+Archivos:
+- Postres.html
+- Postres.js
+
+Qué hace:
+- Guarda los postres en localStorage.
+- Usa la misma clave del carrito: huellasEstiloCarrito
+- Si agregas el mismo postre varias veces, aumenta su cantidad.
+- El contador del carrito se mantiene al recargar/cambiar de página.
+- El texto "Carrito" abre ../carrito.html.
+- El botón conserva su clase original, así que mantiene su estilo.
+
+Coloca ambos archivos dentro de tu carpeta Postres.
